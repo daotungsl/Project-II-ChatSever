@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="managerview.Controller">
+    <children>
+        <HBox prefHeight="600.0" prefWidth="400.0">
+            <children>
+                <AnchorPane prefHeight="600.0" prefWidth="400.0" style="-fx-background-color: #FFFFFF;">
+                    <children>
+                        <Label layoutX="146.0" layoutY="195.0" text="Minecraft">
+                            <font>
+                                <Font size="26.0" />
+                            </font>
+                        </Label>
+                        <JFXTextField fx:id="txtName" layoutX="76.0" layoutY="263.0" prefHeight="30.0" prefWidth="250.0" promptText="Username">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </JFXTextField>
+                        <JFXPasswordField fx:id="txtPass" layoutX="75.0" layoutY="313.0" prefHeight="30.0" prefWidth="250.0" promptText="Password">
+                            <font>
+                                <Font size="16.0" />
+                            </font>
+                        </JFXPasswordField>
+                        <Hyperlink fx:id="btnFogotPass" layoutX="150.0" layoutY="384.0" text="Forgot Password?" />
+                        <Hyperlink layoutX="326.0" layoutY="563.0" style="-fx-text-fill: #463CFA;" text="Ver 1.00?" />
+                        <Hyperlink layoutX="14.0" layoutY="563.0" style="-fx-text-fill: #2B20F9;" text="Copyright © Focus Team" />
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="100.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/Minecraft-logo.jpg" />
+                            </image>
+                  </ImageView>
+                        <ImageView fx:id="gifLoading" fitHeight="81.0" fitWidth="318.0" layoutX="160.0" layoutY="463.0" opacity="0.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../img/GIF_SLIMEY.gif" />
+                            </image>
+                        </ImageView>
+                        <JFXButton fx:id="btnRegister" layoutX="75.0" layoutY="471.0" prefHeight="30.0" prefWidth="250.0" ripplerFill="#fffa00" style="-fx-background-color: #73BD2A;" text="Register" textFill="#fcfcfc">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </JFXButton>
+                        <JFXButton fx:id="btnLogin" layoutX="75.0" layoutY="424.0" onAction="#handleLogin" prefHeight="30.0" prefWidth="250.0" ripplerFill="#f5ff00" style="-fx-background-color: #73BD2A;" text="Login" textFill="#fcfcfc">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </JFXButton>
+                  <Label fx:id="errLogin" layoutX="75.0" layoutY="360.0" prefHeight="17.0" prefWidth="250.0" textFill="#ff0101" />
+                    </children>
+                </AnchorPane>
+            </children>
+        </HBox>
+    </children>
+</AnchorPane>
