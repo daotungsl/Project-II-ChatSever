@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="808.0" prefWidth="537.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="register.RegisterController">
+   <children>
+      <VBox alignment="CENTER" nodeOrientation="LEFT_TO_RIGHT" prefHeight="602.0" prefWidth="520.0" spacing="10.0">
+         <children>
+            <ImageView fitHeight="104.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/minecraft_hd_logo_by_nuryrush-da2aumi.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" prefHeight="50.0" prefWidth="520.0" text="Registration" textFill="#1e5178">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Label>
+            <JFXTextField id="userName" fx:id="txtUsername" onKeyReleased="#onkeyuserName" prefHeight="31.0" prefWidth="429.0" promptText="username" />
+            <Label fx:id="errUsername" prefHeight="21.0" prefWidth="526.0" textFill="#f20d0d" />
+            <JFXPasswordField id="password" fx:id="txtPassword" onKeyReleased="#onkeyPass" prefHeight="31.0" prefWidth="344.0" promptText="password" />
+            <Label fx:id="errPassword" prefHeight="21.0" prefWidth="575.0" textFill="#f20d0d" />
+            <JFXPasswordField id="re-pass" fx:id="txtRepass" onKeyReleased="#onkeyRepass" prefHeight="31.0" prefWidth="344.0" promptText="re-password" />
+            <Label fx:id="errRepass" prefHeight="21.0" prefWidth="544.0" textFill="#f20d0d" />
+            <JFXTextField id="email" fx:id="txtEmail" onKeyReleased="#onkeyEmail" prefHeight="31.0" prefWidth="344.0" promptText="Email" />
+            <Label fx:id="errEmail" prefHeight="21.0" prefWidth="597.0" textFill="#f20d0d" />
+            <JFXButton id="bsubmit" fx:id="btnSubmit" buttonType="RAISED" prefHeight="80.0" prefWidth="344.0" ripplerFill="#b6bbc3" styleClass="bsubmit" stylesheets="@button.css" text="SUBMIT" textFill="#dd5454">
+               <font>
+                  <Font size="37.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
